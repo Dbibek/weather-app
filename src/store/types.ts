@@ -41,6 +41,7 @@ export interface WeatherData {
     sunrise: number;
     sunset: number;
   };
+  name: string;
   timezone: number;
   weather: Weather[];
 }

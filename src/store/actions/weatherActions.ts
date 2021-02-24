@@ -15,13 +15,15 @@ export const getWeather = (
   return async (dispatch) => {
     try {
       const res = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?id=${city}&appid=${process.env.REACT_APP_KEY}`
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.REACT_APP_API_KEY}`
       );
+      console.log(res);
       if (!res.ok) {
         const resData: WeatherError = await res.json();
         throw new Error(resData.message);
       }
       const resData: WeatherData = await res.json();
+
       dispatch({
         type: GET_WEATHER,
         payload: resData,
@@ -34,14 +36,14 @@ export const getWeather = (
     }
   };
 };
-export const setLoading =():WeatherAction=>{
-  return { 
-    type:SET_LOADING,
-  }
-}
-export const setError =():WeatherAction=>{
-  return { 
-    type:SET_ERROR,
-    payload:''
-  }
-}
+export const setLoading = (): WeatherAction => {
+  return {
+    type: SET_LOADING,
+  };
+};
+export const setError = (): WeatherAction => {
+  return {
+    type: SET_ERROR,
+    payload: "",
+  };
+};
