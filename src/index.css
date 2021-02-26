@@ -1,13 +1,82 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .app {
+  background-image: url();
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+}
+.app-warm {
+  background-image: url();
+} */
+
+/* search div */
+
+.container {
+  background-image: url(./images/bg-image.jpg);
+  background-color: #cccccc;
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  padding: 2rem;
+}
+.title {
+  color: aquamarine;
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+form {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.input {
+  min-width: 30rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  outline: none;
+}
+.search-button {
+  width: 10rem;
+  height: 3rem;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.5rem;
+}
+
+/* weatherdata div */
+
+.weather-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+.level-item {
+  display: flex;
+  justify-content: space-between;
 }

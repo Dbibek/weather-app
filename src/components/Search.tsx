@@ -13,7 +13,7 @@ const Search: FC<SearchProps> = ({ title }) => {
 
   const handelChange = (e: FormEvent<HTMLInputElement>) => {
     setCity(e.currentTarget.value);
-    console.log(city)
+    console.log(city);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
@@ -38,7 +38,7 @@ const Search: FC<SearchProps> = ({ title }) => {
               value={city}
               onChange={handelChange}
             />
-            <button className="button">Search</button>
+            <button className="search-button">Search</button>
           </form>
         </div>
       </div>

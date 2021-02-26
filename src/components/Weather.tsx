@@ -8,7 +8,7 @@ interface WeatherProps {
 const Weather: FC<WeatherProps> = ({ data }) => {
   return (
     <section className="section">
-      <div className="container">
+      <div className="weather-container">
         <h1 className="title">
           {data.name}-{data.sys.country}
         </h1>
@@ -23,6 +23,12 @@ const Weather: FC<WeatherProps> = ({ data }) => {
                 />
               </p>
             </div>
+            <p>temperature:{data.main.temp_max}</p>
+            <p>humidity:{data.main.humidity}</p>
+            <p>wind-speed:{data.wind.speed}</p>
+            <p>sunrise:{data.sys.sunrise}</p>
+            <p>sunset:{data.sys.sunset}</p>
+            <p>{data.weather[0].main}</p>
           </div>
         </div>
       </div>

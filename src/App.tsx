@@ -17,17 +17,21 @@ const App: FC = () => {
   const alertMsg = useSelector((state: RootState) => state.alert.message);
 
   return (
-    <div className="App">
-      <Search title="Enter city name and press search button" />
-      {loading ? (
-        <h2 className="is-size-3 py-2">Loading...</h2>
-      ) : (
-        weatherData && <Weather data={weatherData} />
-      )}
-      {alertMsg && (
-        <Alert message={alertMsg} onClose={() => dispatch(setAlert(""))} />
-      )}
-      {error && <Alert message={error} onClose={() => dispatch(setError())} />}
+    <div className="app">
+      <div className="main">
+        <Search title="Enter city name and press search button" />
+        {loading ? (
+          <h2 className="is-size-3 py-2">Loading...</h2>
+        ) : (
+          weatherData && <Weather data={weatherData} />
+        )}
+        {alertMsg && (
+          <Alert message={alertMsg} onClose={() => dispatch(setAlert(""))} />
+        )}
+        {error && (
+          <Alert message={error} onClose={() => dispatch(setError())} />
+        )}
+      </div>
     </div>
   );
 };
