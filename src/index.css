@@ -29,20 +29,18 @@ code {
 /* search div */
 
 .container {
-  background-image: url(./images/bg-image.jpg);
-  background-color: #cccccc;
-  height: 50vh;
+  /* background-image: url(./images/bg-image.jpg); */
+  background-color: #e2e4d7;
+  height: 40vh;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   align-items: center;
-  padding: 2rem;
+  padding-top: 1rem;
 }
 .title {
-  color: aquamarine;
+  color: rgb(38, 129, 99);
   text-align: center;
-  font-size: 2rem;
-  margin: 2rem auto;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 form {
   align-items: center;
@@ -52,20 +50,22 @@ form {
   justify-content: space-between;
 }
 .input {
-  min-width: 30rem;
+  min-width: 20rem;
   height: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
   padding: 1rem;
-  border-radius: 20px;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-size: 1rem;
   outline: none;
+  text-align: center;
 }
 .search-button {
-  width: 10rem;
+  width: 20rem;
   height: 3rem;
   border-radius: 10px;
   outline: none;
   font-size: 1.5rem;
+  background: rgb(87, 240, 151);
 }
 
 /* weatherdata div */
@@ -76,7 +76,20 @@ form {
   justify-content: space-between;
   margin: 0 2rem;
 }
+.heading {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
 .level-item {
   display: flex;
   justify-content: space-between;
+}
+.lavel > p {
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
 }
