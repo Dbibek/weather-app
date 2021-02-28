@@ -28,12 +28,12 @@ const Search: FC<SearchProps> = ({ title }) => {
   return (
     <div>
       <div>
-        <div className="container">
+        <div className="input-container">
           <h1 className="title">{title}</h1>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
-              className="input"
+              className="input-field"
               placeholder="Enter City name"
               value={city}
               onChange={handelChange}

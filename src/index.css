@@ -17,7 +17,7 @@ code {
 }
 
 /* .app {
-  background-image: url();
+  background-image: url(./images/bg-image.jpg);
   background-size: cover;
   background-position: bottom;
   transition: 0.4 ease-out;
@@ -28,16 +28,16 @@ code {
 
 /* search div */
 
-.container {
+.input-container {
   /* background-image: url(./images/bg-image.jpg); */
-  background-color: #e2e4d7;
+  background-color: #f1f1ee;
   height: 40vh;
   background-position: center;
   align-items: center;
   padding-top: 1rem;
 }
 .title {
-  color: rgb(38, 129, 99);
+ 
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -49,7 +49,7 @@ form {
   flex-direction: column;
   justify-content: space-between;
 }
-.input {
+.input-field {
   min-width: 20rem;
   height: 3rem;
   margin-bottom: 0.3rem;
@@ -65,31 +65,40 @@ form {
   border-radius: 10px;
   outline: none;
   font-size: 1.5rem;
-  background: rgb(87, 240, 151);
+  background: rgb(146, 230, 181);
 }
 
 /* weatherdata div */
 
 .weather-container {
+  background-image: url(./images/bg-image.jpg);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0 2rem;
+  height: 60vh;
+  padding: 2rem;
 }
-.heading {
+.headings {
   display: block;
   font-size: 11px;
   letter-spacing: 1px;
   margin-bottom: 5px;
   text-transform: uppercase;
+  color: #fff;
 }
-.level-item {
+.data-container {
   display: flex;
   justify-content: space-between;
+  margin: 2rem auto;
+  width: 70rem;
+  align-items: center;
 }
-.lavel > p {
-  color: #4a4a4a;
-  font-size: 1rem;
+
+.weather-title {
+  color: #a8a5a5;
+  font-size: 2rem;
   font-weight: 600;
   line-height: 1.5;
+  margin-top: 2rem;
 }

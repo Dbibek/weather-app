@@ -1,4 +1,4 @@
-import  { FC } from "react";
+import { FC } from "react";
 
 interface AlertProps {
   message: string;
@@ -8,14 +8,21 @@ interface AlertProps {
 const Alert: FC<AlertProps> = ({ message, onClose }) => {
   return (
     <div>
-      <div onClick={onClose}></div>
-      <div className="alert-card">
-        <header className="alert-header">
-          <p className="alert-messgae">{message}</p>
-        </header>
-        <footer>
-          <button className="button" onClick={onClose}>Close</button>
-        </footer>
+      <div className="modal is-active has-text-centered">
+        <div className="modal-background" onClick={onClose}></div>
+        <div className="modal-card">
+          <header className="modal-card-head has-background-danger">
+            <p className="modal-card-title has-text-white">{message}</p>
+          </header>
+          <footer
+            className="modal-card-foot"
+            style={{ justifyContent: "center" }}
+          >
+            <button className="button" onClick={onClose}>
+              Close
+            </button>
+          </footer>
+        </div>
       </div>
     </div>
   );

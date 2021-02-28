@@ -5,7 +5,7 @@ import App from "./App";
 import { Provider } from "react-redux";
 
 import store from "./store";
-// import "../node_modules/bulma/css/bulma.min.css";
+import "../node_modules/bulma/css/bulma.min.css";
 
 ReactDOM.render(
   <React.StrictMode>

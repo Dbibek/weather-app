@@ -21,7 +21,7 @@ const App: FC = () => {
       <div className="main">
         <Search title="Enter city name and press search button" />
         {loading ? (
-          <h2 className="is-size-3 py-2">Loading...</h2>
+          <h2 className="title">Loading...</h2>
         ) : (
           weatherData && <Weather data={weatherData} />
         )}
