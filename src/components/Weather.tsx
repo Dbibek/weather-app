@@ -10,21 +10,22 @@ const Weather: FC<WeatherProps> = ({ data }) => {
   return (
     <div className="section">
       <div className="weather-container">
-        <h1 className="title">
+        <h1 className="data-title">
           {data.name}-{data.sys.country}
         </h1>
 
         <div className="data-container">
-          <div>
+          <div className="data-div">
             <p className="headings">{data.weather[0].description}</p>
-            <p className="imageicon">
+            <p className="weather-title">
               <img
+                className="image"
                 src={`http://openweathermap.org/img/wn/${data.weather[0].icon}.png`}
                 alt="weathericon"
               />
             </p>
           </div>
-          <div >
+          <div className="data-div">
             <p className="headings">temp</p>
             <p className="weather-title">{celsius} °C</p>
           </div>
